@@ -1,6 +1,6 @@
 {
   "name": "dida/log",
-  "description": "The Log Component of Dida Framework",
+  "description": "A logging component of Dida Framework",
   "type": "library",
   "license": "MIT",
   "homepage": "https://github.com/zeupin/dida-log",
@@ -13,11 +13,12 @@
   ],
   "minimum-stability": "stable",
   "require": {
-    "php": "^5.5 || ^7.0"
+    "php": "^5.5 || ^7.0",
+    "psr/log": "^1.1"
   },
   "autoload": {
     "psr-4": {
-      "Dida\\": "src/Dida"
+      "Dida\\Log\\": "src/Dida/Log"
     }
   }
 }
