@@ -96,11 +96,11 @@ class FileLogger extends Logger
         $data = sprintf("%s [%s] %s\n\n", date("H:i:s"), $level, $message);
 
         // 写入到级别专用文件
-        $file = date("Y_m_d_H") . ".{$level}.log";
+        $file = date("Y_m_d") . ".{$level}.log";
         file_put_contents("$dir/$file", $data, FILE_APPEND);
 
         // 写入到公用文件
-        $file = date("Y_m_d_H") . ".all.log";
+        $file = date("Y_m_d") . ".all.log";
         file_put_contents("$dir/$file", $data, FILE_APPEND);
     }
 
